@@ -5,6 +5,14 @@ import aiosqlite
 from aiogram import Bot, Dispatcher, F
 from aiogram.types import Message
 from aiogram.filters import Command
+import logging
+import sys
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    stream=sys.stdout
+)
 
 TOKEN = "8389508305:AAEznsCDkhc4RlS84l-x2i0ku7orHHE2lfI"
 
